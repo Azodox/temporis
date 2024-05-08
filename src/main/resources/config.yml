@@ -1,0 +1,52 @@
+mysql:
+  host: localhost
+  port: 3306
+  database: ''
+  username: ''
+  password: ''
+  pool:
+    maximumPoolSize: 20
+    connectionTimeout: 10000
+    idleTimeout: 600000
+
+leaderboard:
+  limit: 5
+  # In ticks
+  update-interval: 200
+  displayName: '<rainbow><bold>Leaderboard</bold></rainbow>'
+  topLocation: "world:0.0:0.0:0.0:0:0"
+  entriesGap: 0.35
+  update-rank-message: '<yellow>Vous êtes passé de <gold>%oldRank%</gold> à</yellow> <gold>%newRank%</gold> <yellow>sur le leaderboard !</yellow>'
+  reach-top:
+    # In seconds
+    animation-cooldown: 300
+    broadcast:
+      enabled: false
+      message: "<green>%player% vient d'atteindre la première place !</green>'"
+    title:
+      enabled: true
+      title: '<bold><gold>%player%</gold></bold>'
+      subtitle: "<yellow>vient d'atteindre la première place !</yellow>"
+      fadeIn: 2
+      stay: 2
+      fadeOut: 2
+    sound:
+      enabled: true
+      sound: 'ENTITY_ENDER_DRAGON_DEATH'
+    actionbar:
+      enabled: false
+      message: ""
+
+emeraldSigns:
+
+scoreboard:
+  title: '<rainbow><bold>Temporis V0.1</bold></rainbow>'
+
+deposit:
+  success: '<green>Dépôt effectué !</green>'
+
+tablist:
+  title: '    <bold><light_purple>Temporis</light_purple> <gray>-</gray> <yellow>Saison 1</yellow>    '
+  your-rank: '<gray>Votre classement: %rank%</gray>'
+  opponent: 'Adversaire le plus proche : %opponent%'
+  no-opponent: 'Vous êtes top #1'

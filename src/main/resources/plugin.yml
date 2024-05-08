@@ -1,0 +1,5 @@
+name: Temporis
+version: @version@
+author: Azodox_
+main: fr.azodox.temporis.Temporis
+api-version: 1.20
